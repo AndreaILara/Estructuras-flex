@@ -1,0 +1,36 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+min-height: 100vh;
+}
+
+.container{
+  min-height: 80vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+header, footer{
+  height: 10vh;
+  background-color: rgba(191, 255, 234, 0.795);
+}
+
+main{
+  flex: 2;
+  background-color: rgb(165, 252, 252);
+}
+
+nav, aside{
+  flex: 1;
+  background-color: rgb(211, 203, 255);
+}
+
+@media screen and (max-width:700px ) {
+  .container{
+    flex-direction: column;
+  }
+  main, nav, aside{
+    flex: auto;
+  }
+}
